@@ -13,11 +13,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeklEQVQ4T8WSPUsDQRCGZ+4DROxSiWAh+NGIcAkW/gMbbf0BYi5KCm1sBBsbIYgiUXOmshL8BVpGECHcCWK6pBP8IKI2Yu72dpzbeGphUniFC8uyszPPvu/sIiQcmLAekgPMCXtS6jCslCASSvEo/JcK1E78WJ2eyc6CxD6116gV+uElXJdvVYlu2UWW0U+Eh0ASNQ0HCGBG+GIebsoPUZKZthu8DP2w63PuauA52wrABxcMaQrv4FQlZXKjhgyzwnNWOgA4TASkTSlAiHLdIFgSCA64zp0qsrLHgVea6wxgBODmF4AT30zQCoH7lNet1DS3Y0y4pUI3gATYj3vQigA8x3n2sp1GgDLPaoKuAKJiW0EIZcD3Z24pGWguarp+5FeLtbhpvzSxfUSQ/7bgOk0VTC+YOmg74au5DPXdSNlvrxCF60GPb6Fh2RuIMMJ+lNxosIUUSDoTV6WtaG+kc+cINPh5a4v/SyXQcA2qe/fJf2J861/X/1fwAdqFmyp4J+RTAAAAAElFTkSuQmCC">
     <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
     
-    
-    
-    
-    
-    
     <script type="text/javascript">
       
 
@@ -25,16 +20,13 @@
       var supportedLanguages = ["nl", "en", "it"];
       let defaultLanguage = (navigator.language).slice(0,2);
       if (supportedLanguages.includes(defaultLanguage)){
-        console.log("Default language: " + defaultLanguage)
         return defaultLanguage;
       } else {
-        console.log("Default language preference not supported, default set to English)");
         return "en";
       }
     }
 
     function loadTranslation(currentLng){
-      console.log('Changing text to ' + currentLng);
       localStorage.setItem("language", currentLng);
       var translate = new Translate();
       var attributeName = 'data-tag';
@@ -78,12 +70,11 @@
           }
         }
         xrhFile.send();
-        console.log(allDataTags);
       }
     }
     </script>
-    <script type="module" crossorigin src="/assets/index.c76423cb.js"></script>
-    <link rel="modulepreload" href="/assets/vendor.9fd6999b.js">
+    <script type="module" crossorigin src="/assets/index.8b76b39f.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.87a159b0.js">
     <link rel="stylesheet" href="/assets/index.248fd248.css">
   </head>
     <body class="text-l_menu_text text-lg overflow-x-hidden cursor-none" onload="">
